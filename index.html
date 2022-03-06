@@ -28,9 +28,13 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [55.570140,13.014647], 
+<<<<<<< HEAD
     zoom: 14,  
-    scrollWheelZoom: false,
-    tap: false
+=======
+    zoom: 12,  
+>>>>>>> parent of 06a30bd (Update index.html)
+    scrollWheelZoom: true,
+    tap: true
   });
   L.geolet({
 				position: 'bottomleft'
@@ -44,9 +48,7 @@
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
-  /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+ 
 
   </script>
 </body>
