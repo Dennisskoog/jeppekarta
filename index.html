@@ -22,18 +22,16 @@
   <div id="map-title">Jeppekarta</div>
   <div id="map"></div>
 
-  <!-- Create the interactive map content with JavaScript (.js) -->
+  
   <script>
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [55.570140,13.014647], 
-   
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    zoom: 12,  
     scrollWheelZoom: false,
-    tap: false;
-    
-	  
+    tap: false
+  });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
@@ -50,3 +48,5 @@
   </script>
 </body>
 </html>
+
+
