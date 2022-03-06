@@ -32,6 +32,9 @@
     scrollWheelZoom: false,
     tap: false
   });
+  L.geolet({
+				position: 'bottomleft'
+			}).addTo(map);
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
