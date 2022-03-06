@@ -1,67 +1,28 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Byggnader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-
-  
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <script src="geolet.js"></script>
-
-  
-  <style>
-  body { margin:0; padding:0; }
-  #map { position: absolute; top:0; bottom:0; right:0; left:0; }
-  #map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
-  </style>
-</head>
-<body>
-
-  
-  <div id="map-title">Jeppekarta</div>
-  <div id="map"></div>
-
-  
-  <script>
-
-  
-  var map = L.map('map', {
-    center: [55.583791047221204, 13.004790345648267], 
-    zoom: 12,  
-    scrollWheelZoom: true,
-    tap: true
-  });
-
-  /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-  L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://osm.org/copyright">\
-        OpenStreetMap</a> contributors, &copy;\
-        <a href="https://carto.com/attribution">CARTO</a>'
-  }).addTo(map);
-
-  L.geolet({
-				position: 'bottomleft'
-			}).addTo(map);
-      L.Geolet = L.Control.extend({
-		
-		options: {
-			title: 'Find current location',
-			className: null,
-			activeClassName: null,
-			style: { display: 'flex', color: '' },
-			activeStyle: { display: 'flex', color: '#E00' },
-			html: '<svg width="16" height="16" viewport="0 0 16 16" style="margin:auto auto"><circle cx="8" cy="8" r="7" style="fill:none;stroke:currentColor;stroke-width:2px"/><circle cx="8" cy="8" r="4" style="fill:currentColor"/></svg>',
-			geoOptions: { enableHighAccuracy: true, maximumAge: 30000, timeout: 27000 },
-			marker: null,
-			popup: null,
-			popupContent: null,
-			updatePopupWhenOpen: true,
-			autoPan: true,
-			minZoom: 12
-		},
-  </script>
-</body>
+  <head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl-leaflet/0.0.15/leaflet-mapbox-gl.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.13.1/mapbox-gl.min.css" />
+    <style>
+      #map {position: absolute; top: 0; right: 0; bottom: 0; left: 0;}
+    </style>
+  </head>
+  <body>
+    <div id="map">
+      <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+    </div>
+    
+    <script>
+      var map = L.map('map').setView([55.67655, 13.35860], 10);
+      var gl = L.mapboxGL({
+        attribution: "Rendered with \u003ca href=\"https://www.maptiler.com/desktop/\"\u003eMapTiler Desktop\u003c/a\u003e \u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        style: 'https://api.maptiler.com/maps/416f3fdf-b45b-4f3a-a1ed-86cc90552bba/style.json?key=oV83I8CRDGimYhIegxgd'
+      }).addTo(map);
+    </script>
+  </body>
 </html>
