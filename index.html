@@ -32,6 +32,30 @@
     zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
+    
+
+function onAccuratePositionProgress (e) {
+    console.log(e.accuracy);
+    console.log(e.latlng);
+}
+
+function onAccuratePositionFound (e) {
+    console.log(e.accuracy);
+    console.log(e.latlng);
+}
+
+function onAccuratePositionError (e) {
+    console.log(e.message)
+}
+
+map.on('accuratepositionprogress', onAccuratePositionProgress);
+map.on('accuratepositionfound', onAccuratePositionFound);
+map.on('accuratepositionerror', onAccuratePositionError);
+
+map.findAccuratePosition({
+    maxWait: 15000, // defaults to 10000
+    desiredAccuracy: 30 // defaults to 20
+});
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
