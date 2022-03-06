@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Byggnader</title>
+  <title>leaflet-map-simple</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -19,24 +19,19 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Jeppekarta</div>
+  <div id="map-title">EDIT map title</div>
   <div id="map"></div>
 
-  
+  <!-- Create the interactive map content with JavaScript (.js) -->
   <script>
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [55.570140,13.014647], 
-
-    zoom: 14,  
-
-    zoom: 12,  
-
-    scrollWheelZoom: true,
-    tap: true
+    center: [41.77, -72.69], // EDIT coordinates to re-center map
+    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: false,
+    tap: false
   });
- 
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
@@ -46,10 +41,10 @@
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 
- 
+  /* Display a point marker with pop-up text */
+  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
   </script>
 </body>
 </html>
-
-
