@@ -18,9 +18,14 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <div id="map">
   </div>
 
+=======
+
+  
+>>>>>>> parent of 219ee3f (Revert "Update index.html")
   <script>
 
     var map = new mapboxgl.Map({
@@ -31,25 +36,7 @@
       pitch: 0, // pitch in degrees
       bearing: 0, // bearing in degrees
     });
-    map.on('load', () => {
-      map.addSource('wms-test-source', {
-        'type': 'raster',
-        // use the tiles option to specify a WMS tile source URL
-        // https://docs.mapbox.com/mapbox-gl-js/style-spec/sources/
-        'tiles': [
-          'https://kartor.malmo.se/geoserver/wms?bbox={bbox-epsg-3008}&format=image/png&service=WMS&version=1.1.1&request=GetMap&srs=EPSG:3008&transparent=true&width=256&height=256&layers=malmows:gk_cykellinjer_l'
-        ],
-        'tileSize': 256
-      });
-      map.addLayer(
-        {
-          'id': 'wms-test-layer',
-          'type': 'raster',
-          'source': 'wms-test-source',
-          'paint': {}
-        }
-      );
-    });
+    
     map.addControl(new mapboxgl.NavigationControl());
     map.addControl(
       new mapboxgl.GeolocateControl({
