@@ -15,12 +15,13 @@
 
 </head>
 
-<body id="top" class="span12" data-spy="scroll" data-target=".subnav" data-offset="80" style="font-family: Comic Sans MS">
+<body id="top" class="span12" data-spy="scroll" data-target=".subnav" data-offset="80"
+  style="font-family: Comic Sans MS">
 
 
   <header class="span12" id="overview">
-  <div class="span12">
-  
+    <div class="span12">
+
       <h1>
         <a style="text-decoration:none;color: #FF0000">B</a>
         <a style="text-decoration:none;color:#FF5A00">l</a>
@@ -35,68 +36,68 @@
           <a style="text-decoration:none;color:#00ffff">å</a>
           <a style="text-decoration:none;color:#00B4ff">s</a>
         </blink>
-        
-        <img src="img/kuken_liten_93.gif">   
+
+        <img src="img/kuken_liten_93.gif">
         <img id="bilbo1" src="" style="rotate: 180deg; position: absolute; right: 0; ">
 
         <h6>viktiga Malmölänkar på interwebben.</h6>
       </h1>
 
-    
-      
-        <!-- <h5>viktiga Malmölänkar på interwebben.</h5> -->
-        <!-- <small>Someone famous in <cite title="Source Title">Source Title</cite></small> -->
-      
-      
-  </div>
+
+
+      <!-- <h5>viktiga Malmölänkar på interwebben.</h5> -->
+      <!-- <small>Someone famous in <cite title="Source Title">Source Title</cite></small> -->
+
+
+    </div>
   </header>
 
   <!-- <img src="img/test/construction.gif"> -->
-  <div class="row" >
+  <div class="row">
     <div class="span12">
       <ul class="nav nav-tabs">
         <li class="active">
 
-            <!-- Originalkartan Rubrik               -->
-              <a href="#A" data-toggle="tab"><img class="pull-left">Originalkartan</a>
+          <!-- Originalkartan Rubrik               -->
+          <a href="#A" data-toggle="tab"><img class="pull-left">Originalkartan</a>
 
-            <!-- Cykelkartan Rubrik -->
-              <li><a href="#B" data-toggle="tab" onclick="bild1()"><img class="pull-left" style="margin-top: -3px"
-              src="img/test/new.gif">Cykelkartan</a></li>     
-              
+          <!-- Cykelkartan Rubrik -->
+        <li><a href="#B" data-toggle="tab" onclick="bild1()"><img class="pull-left" style="margin-top: -3px"
+              src="img/test/new.gif">Cykelkartan</a></li>
 
-              <script>
-                function bild1() {      
-                    let image = document.getElementById("bilbo1");
-                    image.src = "img/bilbostanna.gif"
-                    /*Ta bort bilden när man trycker på något annat/några sekunder*/
 
-                    document.getElementById("btnID")
-                            .style.display = "none";
-                }
-            </script>
+        <script>
+          function bild1() {
+            let image = document.getElementById("bilbo1");
+            image.src = "img/bilbostanna.gif"
+            /*Ta bort bilden när man trycker på något annat/några sekunder*/
 
-            <!-- Sopkartan Rubrik -->
-              <li><a href="#C" data-toggle="tab" onclick="bild2()">Sopkartan</a></li>
+            document.getElementById("btnID")
+              .style.display = "none";
+          }
+        </script>
 
-              <script>
-                function bild2() {      
-                    let image = document.getElementById("bilbo2");
-                    image.src = "img/bilbo5.gif"
-                    /*Ta bort bilden när man trycker på något annat/några sekunder*/
+        <!-- Sopkartan Rubrik -->
+        <li><a href="#C" data-toggle="tab" onclick="bild2()">Sopkartan</a></li>
 
-                    document.getElementById("btnID")
-                            .style.display = "none";
-                }
-            </script>
+        <script>
+          function bild2() {
+            let image = document.getElementById("bilbo2");
+            image.src = "img/bilbo5.gif"
+            /*Ta bort bilden när man trycker på något annat/några sekunder*/
 
-            <!-- Karta X Rubrik -->
-              <li><a href="#D" data-toggle="tab">Karta X</a></li>
-              
-              
-            <!--Bilderna-->  
-              
-              <img src="img/test/spinningearth.gif" class="pull-right" >
+            document.getElementById("btnID")
+              .style.display = "none";
+          }
+        </script>
+
+        <!-- Karta X Rubrik -->
+        <li><a href="#D" data-toggle="tab">Karta X</a></li>
+
+
+        <!--Bilderna-->
+
+        <img src="img/test/spinningearth.gif" class="pull-right">
 
       </ul>
       <div class="tabbable">
@@ -111,29 +112,31 @@
             </script>
 
             <!-- <iframe src="https://dennisskoog.github.io/jeppekarta/" frameborder="0" scrolling="no" onload="resizeIframe(this)" /> -->
-            
+
             <iframe width="90%" height="600" src="https://dennisskoog.github.io/jeppekarta/"></iframe>
             <br>
             <br>
-            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/" target="_blank" style="margin-top: 4px">Öppna
+            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/" target="_blank"
+              style="margin-top: 4px">Öppna
               i helskärm istället!</a>
             <br>
             <br>
           </div>
 
-          <div class="tab-pane" id="B">            
+          <div class="tab-pane" id="B">
             <iframe width="90%" height="400" src="https://dennisskoog.github.io/jeppekarta/cykel.html"></iframe>
             <br>
             <br>
-            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/cykel.html" target="_blank" style="margin-top: 4px">Öppna
+            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/cykel.html" target="_blank"
+              style="margin-top: 4px">Öppna
               i helskärm istället!</a>
             <br>
             <br>
           </div>
 
 
-          <div class="tab-pane" id="C">  
-            <img src="" class="pull-right" id="bilbo2" style="rotate: 90deg; transform: translate(-0%,22px)" >            
+          <div class="tab-pane" id="C">
+            <img src="" class="pull-right" id="bilbo2" style="rotate: 90deg; transform: translate(-0%,22px)">
             <iframe width="90%" height="400" src=""></iframe>
             <br>
             <br>
@@ -142,12 +145,17 @@
             <br>
           </div>
 
-          <div class="tab-pane" id="D">          
-            
-            <iframe width="90%" height="400" src=""></iframe>            
+          <div class="tab-pane" id="D">
+
+            <iframe width="90%" height="400" scrolling="auto" allowtransparency="true"
+              style="background:url('img/kuken_.gif')"> </iframe>
             <br>
-            <a class="btn btn-small" href="" target="_blank" style="margin-top: 4px">Öppna i helskärm istället!</a> 
-              <img src="img/bilbo_peek_4.gif" class="pull-right" style="padding-left: 20%; padding-top:15%; rotate: 180deg;" >
+            <a class="btn btn-small" href="img/kuken_.gif" target="_blank" style="margin-top: 4px">Öppna i helskärm
+              istället!</a>
+            <img src="img/bilbo_peek_4.gif" class="pull-right"
+              style="padding-left: 20%; padding-top:15%; rotate: 180deg;">
+              <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=ld8ykyxuwhp5uabh8tldlt3ygwyrcbgx" title="page counter" alt="page counter"></a>
+
             <br>
             <br>
           </div>
@@ -163,8 +171,8 @@
         <!-- <img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"> -->
 
         <!-- <img  src="img/bilbo_sida.gif"> -->
-          
-          
+
+
         <!-- <marquee>
           <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
           
@@ -186,10 +194,10 @@
           <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
         </marquee> -->
       </div>
-      <div class="span8">
-        <a title="free stat counter"><img
-            src="https://counter5.optistats.ovh/private/freecounterstat.php?c=wypaeth8pbnz3b8ugsg2xftteuw62nnn"
-            border="0" title="free stat counter" alt="free stat counter"></a>
+      <div >
+        <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=mxclapcw24yqj8zp6asmtjkth6lbbuqa" title="page counter" alt="page counter"></a>
+
+            
 
 
       </div>
