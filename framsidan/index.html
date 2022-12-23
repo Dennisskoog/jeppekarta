@@ -1,0 +1,250 @@
+<!-- Happy April Fool's Day from Team Divshot!-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Blandadsås</title>
+  <link href="swatch/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="bootstrap/docs/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="swatch/bootswatch.css" rel="stylesheet">
+
+
+</head>
+
+<body id="top" class="span12" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+
+  <header class="span12" id="overview">
+  <div class="span12">
+  
+      <h1>
+        <FONT COLOR="#FF0000">B</FONT>
+        <FONT COLOR="#FF5A00">l</FONT>
+        <FONT COLOR="#FFB400">a</FONT>
+        <FONT COLOR="#FFff00">n</FONT>
+        <FONT COLOR="#A5ff00">d</FONT>
+        <FONT COLOR="#4Bff00">a</FONT>
+        <FONT COLOR="#00ff00">d</FONT>
+        <FONT COLOR="#00ff5A"> </FONT>
+        <blink>
+          <FONT COLOR="#00ffB4">S</FONT>
+          <FONT COLOR="#00ffff">å</FONT>
+          <FONT COLOR="#00B4ff">s</FONT>
+        </blink>
+        
+        <img src="img/kuken_liten_93.gif">   
+        <img id="bilbo1" src="" style="rotate: 180deg; position: absolute; right: 0; ">
+
+        <h6>viktiga Malmölänkar på interwebben.</h6>
+      </h1>
+
+    
+      
+        <!-- <h5>viktiga Malmölänkar på interwebben.</h5> -->
+        <!-- <small>Someone famous in <cite title="Source Title">Source Title</cite></small> -->
+      
+      
+  </div>
+  </header>
+
+  <!-- <img src="img/test/construction.gif"> -->
+  <div class="row" >
+    <div class="span12">
+      <ul class="nav nav-tabs">
+        <li class="active">
+
+            <!-- Originalkartan Rubrik               -->
+              <a href="#A" data-toggle="tab"><img class="pull-left">Originalkartan</a>
+
+            <!-- Cykelkartan Rubrik -->
+              <li><a href="#B" data-toggle="tab" onclick="bild1()"><img class="pull-left" style="margin-top: -3px"
+              src="img/test/new.gif">Cykelkartan</a></li>     
+              
+
+              <script>
+                function bild1() {      
+                    let image = document.getElementById("bilbo1");
+                    image.src = "img/bilbostanna.gif"
+                    /*Ta bort bilden när man trycker på något annat/några sekunder*/
+
+                    document.getElementById("btnID")
+                            .style.display = "none";
+                }
+            </script>
+
+            <!-- Sopkartan Rubrik -->
+              <li><a href="#C" data-toggle="tab" onclick="bild2()">Sopkartan</a></li>
+
+              <script>
+                function bild2() {      
+                    let image = document.getElementById("bilbo2");
+                    image.src = "img/bilbo5.gif"
+                    /*Ta bort bilden när man trycker på något annat/några sekunder*/
+
+                    document.getElementById("btnID")
+                            .style.display = "none";
+                }
+            </script>
+
+            <!-- Karta X Rubrik -->
+              <li><a href="#D" data-toggle="tab">Karta X</a></li>
+              
+              
+            <!--Bilderna-->  
+              
+              <img src="img/test/spinningearth.gif" class="pull-right" >
+
+      </ul>
+      <div class="tabbable">
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="A">
+            
+            <iframe width="90%" height="400" src="https://dennisskoog.github.io/jeppekarta/"></iframe>
+            <br>
+            <br>
+            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/" target="_blank" style="margin-top: 4px">Öppna
+              i helskärm istället!</a>
+            <br>
+            <br>
+          </div>
+
+          <div class="tab-pane" id="B">            
+            <iframe width="90%" height="400" src="https://dennisskoog.github.io/jeppekarta/cykel.html"></iframe>
+            <br>
+            <br>
+            <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/cykel.html" target="_blank" style="margin-top: 4px">Öppna
+              i helskärm istället!</a>
+            <br>
+            <br>
+          </div>
+
+
+          <div class="tab-pane" id="C">  
+            <img src="" class="pull-right" id="bilbo2" style="rotate: 90deg; transform: translate(-0%,22px)" >            
+            <iframe width="90%" height="400" src=""></iframe>
+            <br>
+            <br>
+            <a class="btn btn-small" href="" target="_blank" style="margin-top: 4px">Öppna i helskärm istället!</a>
+            <br>
+            <br>
+          </div>
+
+          <div class="tab-pane" id="D">          
+            
+            <iframe width="90%" height="400" src=""></iframe>            
+            <br>
+            <a class="btn btn-small" href="" target="_blank" style="margin-top: 4px">Öppna i helskärm istället!</a> 
+              <img src="img/bilbo_peek_4.gif" class="pull-right" style="padding-left: 20%; padding-top:15%; rotate: 180deg;" >
+            <br>
+            <br>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- /tabbable -->
+      <div id="kukar" class="span12">
+
+        <!-- <marquee><img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"></marquee> -->
+        <!-- <img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"><img  src="img/bilbo_3.gif"> -->
+
+        <!-- <img  src="img/bilbo_sida.gif"> -->
+          
+          
+        <!-- <marquee>
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+          <img src="img/kuken_liten_BT.gif"><img src="img/kuken_liten_TB.gif">
+        </marquee> -->
+      </div>
+      <div class="span8">
+        <a title="free stat counter"><img
+            src="https://counter5.optistats.ovh/private/freecounterstat.php?c=wypaeth8pbnz3b8ugsg2xftteuw62nnn"
+            border="0" title="free stat counter" alt="free stat counter"></a>
+
+
+      </div>
+    </div><!-- /container -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <script src="bootstrap/docs/assets/js/jquery.js"></script>
+    <script src="bootstrap/docs/assets/js/google-code-prettify/prettify.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-button.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-typeahead.js"></script>
+    <script src="bootstrap/docs/assets/js/bootstrap-affix.js"></script>
+    <script src="bootswatch.js"></script>
+
+    <!-- Navbar
+    ================================================== -->
+    <!--
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+      
+       <div class="nav-collapse" id="main-menu">
+        <ul class="nav" id="main-menu-left">
+          <li class="dropdown" id="preview-menu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rubrik Drop Down <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" href="URL">Länk 1</a></li>
+              <li><a target="_blank" href="URL">Länk 2</a></li>
+              <li class="divider"></li>
+              <li><a target="_blank" href="URL">Länk3 </a></li>
+              <li><a target="_blank" href="URL">Länk 4</a></li>
+            </ul>
+          </li>
+          <li><a href="URL">Direktlänk i samma fönster</a></li>
+          <li><a href="URL" target="_blank">Länk i nytt fönster</a></li>
+          
+        </ul>
+        <ul class="nav pull-right" id="main-menu-right">
+          <li><a rel="tooltip" target="_blank" href="URL" title="Rubrik höger">Rubrik höger <i class="icon-share-alt"></i></a></li>
+        </ul>
+       </div>
+     </div>
+   </div>
+ </div> -->
+
+
+</body>
+
+</html>
