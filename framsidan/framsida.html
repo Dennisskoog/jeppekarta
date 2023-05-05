@@ -4,7 +4,7 @@
 
 
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no>
 
   <title>Blandadsås</title>
   <link href="swatch/bootstrap.min.css" rel="stylesheet">
@@ -16,13 +16,15 @@
 </head>
 
 <body id="top" class="span12" data-spy="scroll" data-target=".subnav" data-offset="80"
-  style="font-family: Comic Sans MS">
+  style="font-family-base: Comic Sans MS">
 
 
-  <header class="span12" id="overview">
+  <header  id="overview">
     <div class="span12">
 
-      <h1>
+      
+        <div>
+        <h1>
         <a style="text-decoration:none;color: #FF0000">B</a>
         <a style="text-decoration:none;color:#FF5A00">l</a>
         <a style="text-decoration:none;color:#FFB400">a</a>
@@ -30,18 +32,27 @@
         <a style="text-decoration:none;color:#A5ff00">d</a>
         <a style="text-decoration:none;color:#4Bff00">a</a>
         <a style="text-decoration:none;color:#00ff00">d</a>
-        <a style="text-decoration:none;color:#00ff5A"> </a>
+        <img style=" position: absolute; right: 10%; " src="img/kuken_liten_93.gif" >
+        <img id="bilbo1" src="" style="rotate: 180deg; position: absolute; right: 0; top: 0;">
+        
+      </h1>
+        </div>
+        <div>
         <blink>
+          <h1>
           <a style="text-decoration:none;color:#00ffB4">S</a>
           <a style="text-decoration:none;color:#00ffff">å</a>
           <a style="text-decoration:none;color:#00B4ff">s</a>
+        </h1>
         </blink>
+        
 
-        <img src="img/kuken_liten_93.gif">
-        <img id="bilbo1" src="" style="rotate: 180deg; position: absolute; right: 0; ">
+        
+        
 
-        <h6>viktiga Malmölänkar på interwebben.</h6>
-      </h1>
+        <!-- <h6>viktiga Malmölänkar på interwebben.</h6> -->
+      </div>
+      
 
 
 
@@ -53,8 +64,8 @@
   </header>
 
   <!-- <img src="img/test/construction.gif"> -->
-  <div class="row">
-    <div class="span12">
+  <div class="container-fluid">
+    
       <ul class="nav nav-tabs">
         <li class="active">
 
@@ -62,7 +73,7 @@
           <a href="#A" data-toggle="tab"><img class="pull-left">Originalkartan</a>
 
           <!-- Cykelkartan Rubrik -->
-        <li><a href="#B" data-toggle="tab" onclick="bild1()"><img class="pull-left" style="margin-top: -3px"
+        <li><a href="#B" data-toggle="tab" onclick="bild1()"><img class="pull-left" style="margin-top: -3px; "
               src="img/test/new.gif">Cykelkartan</a></li>
 
 
@@ -97,7 +108,8 @@
 
         <!--Bilderna-->
 
-        <img src="img/test/spinningearth.gif" class="pull-right">
+        <!-- <img src="img/test/spinningearth.gif" class="pull-right"> -->
+        
 
       </ul>
       <div class="tabbable">
@@ -113,7 +125,7 @@
 
             <!-- <iframe src="https://dennisskoog.github.io/jeppekarta/" frameborder="0" scrolling="no" onload="resizeIframe(this)" /> -->
 
-            <iframe width="90%" height="600" src="https://dennisskoog.github.io/jeppekarta/"></iframe>
+            <iframe width="100%" height="400" src="https://dennisskoog.github.io/jeppekarta/"></iframe>
             <br>
             <br>
             <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/" target="_blank"
@@ -124,7 +136,7 @@
           </div>
 
           <div class="tab-pane" id="B">
-            <iframe width="90%" height="400" src="https://dennisskoog.github.io/jeppekarta/cykel.html"></iframe>
+            <iframe width="95%" height="400" src="https://dennisskoog.github.io/jeppekarta/cykel.html"></iframe>
             <br>
             <br>
             <a class="btn btn-small" href="https://dennisskoog.github.io/jeppekarta/cykel.html" target="_blank"
@@ -136,8 +148,8 @@
 
 
           <div class="tab-pane" id="C">
-            <img src="" class="pull-right" id="bilbo2" style="rotate: 90deg; transform: translate(-0%,22px)">
-            <iframe width="90%" height="400" src=""></iframe>
+            <img src="" class="pull-right" id="bilbo2" style="rotate: 90deg; position: absolute; right: 20;">
+            <iframe width="95%" height="400" src=""></iframe>
             <br>
             <br>
             <a class="btn btn-small" href="" target="_blank" style="margin-top: 4px">Öppna i helskärm istället!</a>
@@ -147,18 +159,19 @@
 
           <div class="tab-pane" id="D">
 
-            <iframe width="90%" height="400" scrolling="auto" allowtransparency="true"
+            <iframe width="95%" height="400" scrolling="auto" allowtransparency="true"
               style="background:url('img/kuken_.gif')"> </iframe>
             <br>
             <a class="btn btn-small" href="img/kuken_.gif" target="_blank" style="margin-top: 4px">Öppna i helskärm
               istället!</a>
             <img src="img/bilbo_peek_4.gif" class="pull-right"
               style="padding-left: 20%; padding-top:15%; rotate: 180deg;">
-              <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=ld8ykyxuwhp5uabh8tldlt3ygwyrcbgx" title="page counter" alt="page counter"></a>
 
             <br>
             <br>
           </div>
+          <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=ld8ykyxuwhp5uabh8tldlt3ygwyrcbgx" title="page counter" alt="page counter"></a>
+
 
         </div>
       </div>
@@ -195,13 +208,15 @@
         </marquee> -->
       </div>
       <div >
-        <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=mxclapcw24yqj8zp6asmtjkth6lbbuqa" title="page counter" alt="page counter"></a>
+        <!-- <a><img class="pull-right" src="https://counter5.optistats.ovh/private/freecounterstat.php?c=mxclapcw24yqj8zp6asmtjkth6lbbuqa" title="page counter" alt="page counter"></a> -->
 
             
 
 
       </div>
-    </div><!-- /container -->
+    
+
+  </div><!-- /container -->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

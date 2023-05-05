@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet-heat.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/Observationerkopia_1.js"></script>
+        <script src="data/Riskylines_2.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[55.574315042710786,12.943387379412801],[55.60770130285603,13.048228514172763]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_DarkMatterretina_0');
+        map.getPane('pane_DarkMatterretina_0').style.zIndex = 0;
+        
+        var layer_DarkMatterretina_0 = L.tileLayer('http://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+            pane: 'pane_DarkMatterretina_0',
+            opacity: 1,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 20
+        });
+        layer_DarkMatterretina_0;
+        map.addLayer(layer_DarkMatterretina_0);
+        function pop_Observationerkopia_1(feature, layer) {}
+
+        map.createPane('pane_Observationerkopia_1');
+        map.getPane('pane_Observationerkopia_1').style.zIndex = 399;
+        map.getPane('pane_Observationerkopia_1').style['mix-blend-mode'] = 'lighten';
+        var Observationerkopia_1_hm = geoJson2heat(json_Observationerkopia_1,
+                                      '');
+        var layer_Observationerkopia_1 = new L.heatLayer(Observationerkopia_1_hm, {
+            attribution: '',
+            interactive: false,
+            radius: 40,
+            max: 1,
+            minOpacity: 0.35,
+            gradient: {0: '#481d6f', 0.3: '#3d4e8a',0.8: '#218e8d', 1: '#b0dd2f'}});
+        bounds_group.addLayer(layer_Observationerkopia_1);
+        map.addLayer(layer_Observationerkopia_1);
+        function pop_Riskylines_2(feature, layer) {}
+
+        function style_Riskylines_2_0(feature) {
+            if (feature.properties['NUMPOINTS'] >= 1.000000 && feature.properties['NUMPOINTS'] <= 6.000000 ) {
+                return {
+                pane: 'pane_Riskylines_2',
+                opacity: 0,
+                color: 'rgba(11,4,5,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 6.000000 && feature.properties['NUMPOINTS'] <= 17.000000 ) {
+                return {
+                pane: 'pane_Riskylines_2',
+                opacity: 1,
+                color: 'rgba(62,53,107,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 17.000000 && feature.properties['NUMPOINTS'] <= 45.000000 ) {
+                return {
+                pane: 'pane_Riskylines_2',
+                opacity: 1,
+                color: 'rgba(53,123,163,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'bevel',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 45.000000 && feature.properties['NUMPOINTS'] <= 93.000000 ) {
+                return {
+                pane: 'pane_Riskylines_2',
+                opacity: 1,
+                color: 'rgba(75,194,173,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 93.000000 && feature.properties['NUMPOINTS'] <= 191.000000 ) {
+                return {
+                pane: 'pane_Riskylines_2',
+                opacity: 1,
+                color: 'rgba(222,245,229,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+            }
+        }
+        map.createPane('pane_Riskylines_2');
+        map.getPane('pane_Riskylines_2').style.zIndex = 402;
+        map.getPane('pane_Riskylines_2').style['mix-blend-mode'] = 'normal';
+        var layer_Riskylines_2 = new L.geoJson(json_Riskylines_2, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_Riskylines_2',
+            layerName: 'layer_Riskylines_2',
+            pane: 'pane_Riskylines_2',
+            onEachFeature: pop_Riskylines_2,
+            style: style_Riskylines_2_0,
+        });
+        bounds_group.addLayer(layer_Riskylines_2);
+        map.addLayer(layer_Riskylines_2);
+        setBounds();
+        function geoJson2heat(geojson, weight) {
+          return geojson.features.map(function(feature) {
+            return [
+              feature.geometry.coordinates[1],
+              feature.geometry.coordinates[0],
+              feature.properties[weight]
+            ];
+          });
+        }
+        </script>
+    </body>
+</html>
